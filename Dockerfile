@@ -1,4 +1,4 @@
-ARG PHP_IMAGE=php:8.2
+ARG PHP_IMAGE=php:8.5
 FROM $PHP_IMAGE
 
 RUN docker-php-ext-configure pcntl --enable-pcntl \
