@@ -44,10 +44,10 @@ http://pear.php.net/dtd/package-2.0.xsd">
     <email>hradtke@php.net</email>
     <active>no</active>
   </lead>
-  <date>2023-04-30</date>
+  <date>2026-07-05</date>
   <version>
-    <release>8.2</release>
-    <api>8.2</api>
+    <release>8.3</release>
+    <api>8.3</api>
   </version>
   <stability>
     <release>stable</release>
@@ -55,11 +55,12 @@ http://pear.php.net/dtd/package-2.0.xsd">
   </stability>
   <license uri="http://www.php.net/license">PHP License</license>
   <notes>
-   - Version 8.x support PHP 8.x
+   - Version 8.3 support PHP 8.5.
+   - Version 8.x support PHP 8.x.
    - Version 4.x supports PHP 7.0-7.4.
    - Version 4.x is considered to be stable for production usage.
-   - Support for PHP 5.x has been removed, please use memcache extension ver. 3.x
-   - Special thanks to Frantisek Drojak - thesource93 (github) and Zaffy (github) for making this happen
+   - Support for PHP 5.x has been removed, please use memcache extension ver. 3.x.
+   - Special thanks to Frantisek Drojak - thesource93 (github) and Zaffy (github) for making this happen.
   </notes>
   <contents>
     <dir name="/">
@@ -191,6 +192,21 @@ http://pear.php.net/dtd/package-2.0.xsd">
     <configureoption name="enable-memcache-session" default="yes" prompt="Enable memcache session handler support?" />
   </extsrcrelease>
   <changelog>
+    <release>
+      <date>2026-07-05</date>
+      <version>
+        <release>8.3</release>
+        <api>8.3</api>
+      </version>
+      <stability>
+        <release>stable</release>
+        <api>stable</api>
+      </stability>
+      <license uri="http://www.php.net/license">PHP License</license>
+      <notes>
+        - 8.3 adds support for PHP 8.5.x
+      </notes>
+    </release>
     <release>
       <date>2020-12-06</date>
       <version>
