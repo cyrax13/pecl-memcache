@@ -29,13 +29,13 @@ if ($version >= '1.4.0') {
 }
 
 $result = $memcache->getStats('slabs');
-var_dump($result[key($result)]['chunk_size']);
-var_dump($result[key($result)]['free_chunks_end']);
+var_dump($result[key($result ?: [])]['chunk_size']);
+var_dump($result[key($result ?: [])]['free_chunks_end']);
 $slab = key($result);
 
 $result = $memcache->getStats('cachedump', $slab, 10);
-var_dump($result[key($result)][0]);
-var_dump($result[key($result)][1]);
+var_dump($result[key($result ?: [])][0]);
+var_dump($result[key($result ?: [])][1]);
 
 $result = $memcache->getStats('items');
 var_dump($result['items'][$slab]['number']);
