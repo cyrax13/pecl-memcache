@@ -2,13 +2,8 @@
 PECL bug #63142 (memcache 3.0.7 segfaults with object (un)serialization)
 --SKIPIF--
 <?php
-if (PHP_VERSION_ID >= 80500)
-    die('skip php prior to 8 only');
 include 'connect.inc';
 ?>
---INI--
-;fix me later
-report_memleaks=0
 --FILE--
 <?php
 
